@@ -55,7 +55,7 @@
 	background-image: linear-gradient(
       rgba(255, 215, 0, 0.4),
 	  rgba(255, 215, 0, 0.4)
-    ),url("img/usf.jpg");
+    ),url("img/USF.jpg");
 }
 
 .btn-primary, .btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
@@ -226,9 +226,9 @@ h2 {
 }
 
 h3 {
-	font-size: 200%;
-	font-family: 'Roboto Condensed', sans-serif;
-	text-align: left;
-	}
+   font-size: 200%;
+   font-family: 'Roboto Condensed', sans-serif;
+   text-align: left;
+}
 	
 
