@@ -53,9 +53,9 @@
  
 .paralsec2 {
 	background-image: linear-gradient(
-      rgba(255, 215, 0, 0.4),
-	  rgba(255, 215, 0, 0.4)
-    ),url("img/USF.jpg");
+      	rgba(255, 215, 0, 0.4),
+	rgba(255, 215, 0, 0.4)
+    ), url("img/USF.jpg");
 }
 
 .btn-primary, .btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
@@ -199,7 +199,7 @@ body {
 }
 .btn-custom {
   color: #fff;
-	background-color: green;
+  background-color: green;
 }
 .btn-custom:hover,
 .btn-custom:focus {
@@ -212,9 +212,11 @@ body {
     font-size: 12px;
     text-align: center;
 }
+
 #footer p {
     margin-bottom: 0;
 }
+
 #footer a {
     color: inherit;
 }
