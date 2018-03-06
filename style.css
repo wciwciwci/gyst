@@ -1,19 +1,98 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i|Mukta+Mahee');
-#logo {
+#logo-bar {
 	font-family: 'Mukta Mahee', sans-serif;
-	font-size: 650%;
-	color:gold;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	text-align:center;
+	font-size: 300%;
+	color:white;
+	}
+	
+#logo-head {
+	font-family: 'Mukta Mahee', sans-serif;
+	font-size: 700%;
+	color:white;
 }
 
-.navbar-inverse {
+	
+/*ParaHead*/
+	
+.paral {
+	min-height: 600px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	color:green;
+	margin: 0px;
+}
+
+.paral p {
+	font-size: 24px;
+	color:#f5f5f5;
+	text-align: center;
+	line-height: 60px;
+}
+ 
+.paral h1 {
+	color: green;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 30px;
+	line-height: 100px;
+}
+
+.paralsec {
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+	  rgba(0, 0, 0, 0.75)
+    ), url("img/content1.jpg");
+}
+ 
+.paralsec1 {
+	background-color: green;
+	color: white;
+	}
+ 
+.paralsec2 {
+	background-image: linear-gradient(
+      rgba(255, 215, 0, 0.4),
+	  rgba(255, 215, 0, 0.4)
+    ),url("img/usf.jpg");
+}
+
+.btn-primary, .btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: gold !important;
+	color: green !important;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+}
+
+a:link {
+	color: green;
+}
+/*End ParaHead*/
+
+
+/*navbar*/
+.affix {
+      top: 0;
+      width: 100%;
+      /*z-index: 9999 !important;*/
+  }
+
+.affix + .container-fluid {
+      padding-top: 20px;
+  }
+  
+.navbar-dark {
 	background-color: green !important;
-  color: white;
+	color: white;
 	border-color: green;
 	border-radius: 0;
 	border-color: green;
 	border-radius: 0;
+	margin: 0;
+	padding:0;
 }
 
 ul.nav li a, ul.nav li a:visited {
@@ -28,9 +107,32 @@ ul.nav li.active a {
     color: white !important;
 }
 
-/*    --------------------------------------------------
-	:: Login Field
-	-------------------------------------------------- */
+body {
+  background-color: #fff;
+  color: #000;
+  padding-top: 2em;
+}
+
+.sps {
+  padding: 1em .5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.25s ease;
+  width: 100%;
+}
+
+.sps--abv {
+  background-color: transparent;
+  color: #000;
+}
+
+.sps--blw {
+  background-color: #333;
+  color: #fff;
+}
+
+/*Login Field*/
 
 #login {
     padding-top: 50px
@@ -91,9 +193,7 @@ ul.nav li.active a {
 	display: block;
 }
 
-/*    --------------------------------------------------
-	:: Inputs & Buttons
-	-------------------------------------------------- */
+/*Inputs/Buttons*/
 .form-control {
     color: #212121;
 }
@@ -106,9 +206,7 @@ ul.nav li.active a {
     color: #fff;
 }
 
-/*    --------------------------------------------------
-    :: Footer
-	-------------------------------------------------- */
+/*Footer*/
 #footer {
     color: #6d6d6d;
     font-size: 12px;
@@ -132,3 +230,5 @@ h3 {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-align: left;
 	}
+	
+
