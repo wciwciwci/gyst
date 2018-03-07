@@ -7,20 +7,38 @@
 	
 #logo-head {
 	font-family: 'Mukta Mahee', sans-serif;
-	font-size: 700%;
+	font-size: 700%;
 	color:white;
 }
 
-	
+img {
+    max-width: 40%;
+    height: auto;
+   	padding:5px;
+	margin: 5px;
+}
+
+.bg{
+   background-image: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+	  rgba(0, 0, 0, 0.75)
+    ), url("img/content1.jpg");
+	height: 100%; 
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /*ParaHead*/
 	
 .paral {
-	min-height: 600px;
+	min-height: 700px;
 	background-attachment: fixed;
 	background-size: cover;
-	background-position: 50% 50%;
-	color:green;
+	background-position: 100% 100%;
+	color:white;
 	margin: 0px;
+	border-radius: 0 !important;
 }
 
 .paral p {
@@ -34,8 +52,8 @@
 	color: green;
 	font-size: 60px;
 	text-align: center;
-	padding-top: 60px;
-	margin-bottom: 30px;
+	padding-top: 10px;
+	margin-bottom: 35px;
 	line-height: 100px;
 }
 
@@ -53,12 +71,41 @@
  
 .paralsec2 {
 	background-image: linear-gradient(
-      	rgba(255, 215, 0, 0.4),
+      rgba(0, 0, 0, 0.75),
+	  rgba(0, 0, 0, 0.75)
+    ), url("img/feat.jpeg");
+}
+
+.paralsec3 {
+	background-image: linear-gradient(
+    rgba(255, 215, 0, 0.4),
 	rgba(255, 215, 0, 0.4)
     ), url("img/USF.jpg");
 }
 
-.btn-primary, .btn, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.paralsec4 {
+
+	background-size: 100% 100%;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+	  rgba(0, 0, 0, 0.75)
+    ), url("img/content1.jpg");
+}
+
+.paralsec5 {
+	min-height: 250px;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+	  rgba(0, 0, 0, 0.75)
+    ), url("img/feat.jpeg");
+}
+
+.ni {
+    font-style: normal;   
+}
+
+
+.btn-primary, .btn, .btn-large, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
     background-color: gold !important;
 	color: green !important;
 	padding-left: 30px;
@@ -74,21 +121,16 @@ a:link {
 
 
 /*navbar*/
-.affix {
-      top: 0;
-      width: 100%;
-      /*z-index: 9999 !important;*/
-  }
-
-.affix + .container-fluid {
-      padding-top: 20px;
-  }
+.row {
+	 backgroung-color: rgba(0, 0, 0, 0.75);
+}
+	
   
 .navbar-dark {
 	background-color: green !important;
 	color: white;
 	border-color: green;
-	border-radius: 0;
+	border-radius: 0 !important;
 	border-color: green;
 	border-radius: 0;
 	margin: 0;
@@ -110,88 +152,10 @@ ul.nav li.active a {
 body {
   background-color: #fff;
   color: #000;
-  padding-top: 2em;
+  
+  margin:0px;
 }
 
-.sps {
-  padding: 1em .5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  transition: all 0.25s ease;
-  width: 100%;
-}
-
-.sps--abv {
-  background-color: transparent;
-  color: #000;
-}
-
-.sps--blw {
-  background-color: #333;
-  color: #fff;
-}
-
-/*Login Field*/
-
-#login {
-    padding-top: 50px
-}
-#login .form-wrap {
-    width: 30%;
-    margin: 0 auto;
-}
-#login h1 {
-    color: green;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    padding-bottom: 20px;
-}
-#login .form-group {
-    margin-bottom: 25px;
-}
-#login .checkbox {
-    margin-bottom: 20px;
-    position: relative;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-#login .checkbox.show:before {
-    content: '\e013';
-    color: #1fa67b;
-    font-size: 17px;
-    margin: 1px 0 0 3px;
-    position: absolute;
-    pointer-events: none;
-    font-family: 'Glyphicons Halflings';
-}
-#login .checkbox .character-checkbox {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    vertical-align: middle;
-    display: inline-block;
-}
-#login .checkbox .label {
-    color: #6d6d6d;
-    font-size: 13px;
-    font-weight: normal;
-}
-#login .btn.btn-custom {
-    font-size: 14px;
-	margin-bottom: 20px;
-}
-#login .forget {
-    font-size: 13px;
-	text-align: center;
-	display: block;
-}
 
 /*Inputs/Buttons*/
 .form-control {
@@ -199,27 +163,14 @@ body {
 }
 .btn-custom {
   color: #fff;
-  background-color: green;
+  background-color: gold;
 }
 .btn-custom:hover,
 .btn-custom:focus {
     color: #fff;
 }
 
-/*Footer*/
-#footer {
-    color: #6d6d6d;
-    font-size: 12px;
-    text-align: center;
-}
 
-#footer p {
-    margin-bottom: 0;
-}
-
-#footer a {
-    color: inherit;
-}
 
 h2 {
   font-size: 200%;
@@ -227,10 +178,9 @@ h2 {
   text-align: center;
 }
 
-h3 {
-   font-size: 200%;
-   font-family: 'Roboto Condensed', sans-serif;
-   text-align: left;
+
+h4 {
+	text-align: center;
 }
 	
 

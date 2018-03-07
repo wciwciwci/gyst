@@ -6,66 +6,140 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="style.css" rel="stylesheet">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.bundle.min.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 <script
 			  src="http://code.jquery.com/jquery-3.3.1.js"
 			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 			  crossorigin="anonymous">
 </script>
+<script src="http://acch.github.io/scrollpos-styler/scrollPosStyler.js"></script>
 <script src="scripts.js"></script>
 
+<style>
+body, html {height:100%}
+</style>
 </head>
 
-<title>Gyst - Signup</title>
-<header>
-</header>
+<title>Gyst - Sign Up</title>
 
-<body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      <!-- Gonna hide this shit for now  <a class="navbar-brand" href="#"><div id ="logo"><font size ="6">Miami</font></div></a> -->
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li role="presentation" class="dropdown">
-			  <ul class="dropdown-menu"></ul>
-        <li role="presentation"><a href="https://youtu.be/958GzzqgWnw">About</a></li>
-        <li role="presentation"><a href="login.html">Home</a></li>
+<!-Begin Nav->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" data-spy="affix">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><div id ="logo-bar">Gyst</div></a>
+            </li>
         </ul>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+	    <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="signin.html">Sign In</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="index.html#about">About</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="index.html#features">Features</a>
+            </li>
+			<li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-End Nav->
+
+
+
+
+<!-Begin Content->
+
+	<div class="container-fluid bg py-3">
+		<div class="row">
+			<div class="col-md-6 mx-auto">
+					<div class="card card-body">
+						<h3 class="ni text-center mb-4">Registration</h3>
+						<div class="alert alert-danger">
+							<a class="close font-weight-light" data-dismiss="alert" href="#">×</a>Password is too short.
+						</div>
+						<fieldset>
+							<div class="form-group has-error">
+								<input class="form-control input-lg" placeholder="E-mail Address" name="email" type="text">
+							</div>
+							<div class="form-group has-success">
+								<input class="form-control input-lg" placeholder="Password" name="password" value="" type="password">
+							</div>
+							<div class="form-group has-success">
+                            <input class="form-control input-lg" placeholder="Confirm Password" name="password" value="" type="password">
+							</div>
+							<div class="form-group">
+								<select class="form-control input-lg">
+									<option selecterd="">Security Question</option>
+									<option selecterd="">Have you ever been in an institution?</option>
+									<option selecterd="">Do they keep you in a cell?</option>
+									<option selecterd="">When you're not performing your duties do they keep you in a little box? </option>
+								</select>
+							</div>
+							<div class="form-group">
+								<input class="form-control input-lg" placeholder="Security Answer" name="answer" value="" type="text">
+							</div>
+							<div class="checkbox">
+								<label class="small">
+									<input name="terms" type="checkbox">I have read and agree to the <a data-toggle="modal fade" href="#ToS" class="button">Terms of Service</a>
+								</label>
+							<button type="button" class="btn btn-lg btn-primary btn-block" data-toggle="modal" data-target="#modalSubmit">Submit</button>
+							
+<!-- Modal -->
+<div class="modal fade" id="modalSubmit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registration Complete</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Thank you. Your registration has been successfully processed. Please click below to sign in.
+      </div>
+      <div class="modal-footer">
+            <a href="signin.html" class="btn btn-primary" role="button">Sign In</a>
       </div>
     </div>
-  </nav>
+  </div>
+</div>
+<!-- JS code -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js">
+</script>
+<!--JS below-->
 
-<section id="login">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-		<div class="form_main">
-                <h3>Sign up!</h3>
-                <div class="form">
-                <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
-                    <input type="text" required="" placeholder="Name" value="" name="name" class="txt">
-                    <input type="text" required="" placeholder="Email" value="" name="mob" class="txt">
-                    <input type="text" required="" placeholder="Company Name" value="" name="email" class="txt">
-                    <input type="text" required="" placeholder="Phone Number" value="" name="email" class="txt">
-                    <input type="text" required="" placeholder="Password" value="" name="email" class="txt">
-                    <input type="text" required="" placeholder="Confirm Password" value="" name="email" class="txt">
-                    <input type="submit" value="submit" name="submit" class="txt2">
-                </form>
-            </div>
-            </div>
-            </div
+
+<!--modal-->
+<script>
+
+</script>
+							
+						</fieldset>
+
+					</div>
+					
+			</div>
+		</div>
 	</div>
 </div>
-
-<footer id="footer">
-</footer>
+</body>

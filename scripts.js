@@ -16,6 +16,7 @@ function showPassword() {
     }
 
 }
+
 //fixed navigation bar
 $('.navbar').affix({
     offset:{
@@ -30,3 +31,8 @@ $('#sidemenu').affix({
         bottom: $('footer').outerHeight() + 50
     }
 });
+
+  $(document).load(function() {
+    $("#myModal").modal();
+  });
+  
